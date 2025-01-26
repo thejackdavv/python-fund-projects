@@ -32,12 +32,12 @@ while True:
 
     # Step 4: Generate the selected pattern
     if choice == 1:  # Right-angled Triangle
-        # TODO: Loop through rows and print increasing stars
+        #Loop through rows and print increasing stars
         for row in range(1, rows + 1):
             print("*" * row)
 
     elif choice == 2:  # Square with Hollow Center
-        # TODO: Create a square with a hollow center
+        #Create a square with a hollow center
         for line in range(1, size + 1):
             if line == 1 or line == size:
                 print("*" * size)
@@ -46,7 +46,7 @@ while True:
 
 
     elif choice == 3:  # Diamond
-        # TODO: Create a diamond shape using loops
+        #Create a diamond shape using loops
         if rows % 2 != 0:
             space = rows // 2
             stars = 1
@@ -75,14 +75,14 @@ while True:
                 stars -= 2
 
     elif choice == 4:  # Left-angled Triangle
-        # TODO: Print decreasing stars for each row
+        #Print decreasing stars for each row
         for row in range(rows, 0, -1):
             print("*" * row)
 
 
 
     elif choice == 5:  # Hollow Square
-        # TODO: Similar to choice 2 but ensure perfect square logic
+        #Similar to choice 2 but ensure perfect square logic
         for line in range(1, size + 1):
             if line == 1 or line == size:
                 print("* " * (size - 1) + "*")
@@ -90,7 +90,7 @@ while True:
                 print("*" + " " * (size * 2 - 3) + "*")
 
     elif choice == 6:  # Pyramid
-        # TODO: Center-align stars to form a pyramid
+        #Center-align stars to form a pyramid
         space = rows - 1
         stars = 1
         for row in range(1, rows * 2 + 1, 2):
@@ -100,7 +100,7 @@ while True:
 
 
     elif choice == 7:  # Reverse Pyramid
-        # TODO: Create an upside-down pyramid
+        #Create an upside-down pyramid
         space = 0
         stars = rows * 2 - 1
         for row in range(rows * 2 - 1, 0, -2):
@@ -109,7 +109,7 @@ while True:
             stars -= 2
 
     elif choice == 8:  # Rectangle with Hollow Center
-        # TODO: Handle separate width and height inputs for rectangle
+        #Handle separate width and height inputs for rectangle
         for star in range(1, height + 1):
             if star == 1 or star == height:
                 print("* " * (width - 1) + "*")
