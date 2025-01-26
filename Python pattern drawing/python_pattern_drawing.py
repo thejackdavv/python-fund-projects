@@ -1,6 +1,6 @@
 
 while True:
-    # 🖼️ Python Pattern Drawing Project
+    # 🖼️ Python Pattern Draghfgfghfhgwing Project
 
     # Step 1: Display a menu to the user
     print("🌟 Welcome to the Python Pattern Drawing Program!")
